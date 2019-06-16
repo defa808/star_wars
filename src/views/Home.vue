@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ItemList/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { mapActions, mapGetters } from "vuex";
+import ItemList from "@/components/main-page/ItemList.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    HelloWorld
+    ItemList
+  },
+
+  computed: {
+    ...mapGetters(["minFilms"])
+  },
+
+  methods: {
+    ...mapActions(["loadMinFilms"])
+  },
+
+  created() {
+    if (this.minFilms.length == 0) this.loadMinFilms();
   }
-}
+};
 </script>
