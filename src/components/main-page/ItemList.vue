@@ -1,19 +1,25 @@
 <template>
-<div>
-  <template v-for="item in minFilms">
-    <Item :data="item" :key="item.episode_id"/>
-  </template>
-</div>
+  <div class="notes-grid" ref="grid">
+    <Item v-for="item in minFilms" :data="item" :key="item.episode_id"/>
+  </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 import Item from "@/components/main-page/Item.vue";
-
+import Masonry from "masonry-layout";
 export default {
   name: "ItemList",
   components: {
-    Item
+    Item,
+  },
+
+  beforeMount() {
+    const grid = this.$refs.grid;
+    this.msnry = new Masonry(grid, {
+      itemSelector: ".note",
+      gutter: 15
+    });
   },
 
   computed: {
@@ -22,5 +28,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.grid-item {
+  margin-bottom: 10px;
+}
 </style>
