@@ -63,6 +63,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #c6c6c6;
+
 }
 
 a {
