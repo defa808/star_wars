@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :style="{ backgroundImage: 'url(' + require('./assets/img/backStars.png') + ')' }">
+  <div id="app" >
     <!-- <div id="nav">
     Home</router-link>|
     </div>-->
@@ -23,9 +23,9 @@ export default {
   components: {
     CubeShadow
   },
-
   computed: {
-    ...mapGetters(["loading"])
+    ...mapGetters(["loading"]),
+   
   }
 };
 </script>
@@ -48,6 +48,10 @@ body {
   background: black;
 }
 
+body {
+  background-image: url('assets/img/backStars.png');
+}
+
 .titleApp {
   padding: 30px 0px;
 
@@ -63,7 +67,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #c6c6c6;
-
 }
 
 a {
@@ -82,8 +85,8 @@ a {
 
 .spinnerWrap {
   position: absolute;
-    top: 35px;
-    right: 35px;
+  top: 35px;
+  right: 35px;
   .spinner {
     background-color: white !important;
   }
