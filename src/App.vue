@@ -49,7 +49,7 @@ body {
 }
 
 body {
-  background-image: url('assets/img/backStars.png');
+  background-image: url('assets/img/backStars.jpg');
 }
 
 .titleApp {
