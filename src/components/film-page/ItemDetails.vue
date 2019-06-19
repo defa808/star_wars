@@ -94,7 +94,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .md-list {
   width: 320px;
   max-width: 100%;
