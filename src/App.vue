@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :style="{ backgroundImage: 'url(' + require('./assets/img/backStars.png') + ')' }">
     <!-- <div id="nav">
     Home</router-link>|
     </div>-->
@@ -45,7 +45,7 @@ export default {
 }
 body {
   background: black;
-  background-image: url("assets/img/backStars.jpg");
+  // background-image: url("assets/img/backStars.jpg");
 }
 
 .titleApp {
