@@ -34,7 +34,7 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 .columnTest {
   display: flex;
   justify-content: space-between;
@@ -58,21 +58,21 @@ export default {
   color: white !important;
 }
 
-::v-deep .md-card {
+ .md-card {
   &:hover {
-    background: #252525;
+    background: #252525 !important;
   }
-  width: 320px;
-  margin: 4px;
-  display: inline-block;
-  vertical-align: top;
-  border-radius: 10px;
+  width: 320px !important;
+  margin: 4px !important;
+  display: inline-block !important;
+  vertical-align: top !important;
+  border-radius: 10px !important;
   // background: black;
   // box-shadow: 0 3px 1px -2px rgba(255, 166, 0, 0.2),
   //   0 2px 2px 0 rgba(255, 166, 0, 0.14), 0 0px 0px 0 rgba(255, 166, 0, 0.12);
 }
 
-::v-deep .md-card.md-with-hover:hover {
+ .md-card.md-with-hover:hover {
   // box-shadow: 0 5px 5px -3px rgba(255, 166, 0, 0.2),
   //   0 8px 10px 1px rgba(255, 166, 0, 0.14),
   //   0 3px 14px 2px rgba(255, 166, 0, 0.12);

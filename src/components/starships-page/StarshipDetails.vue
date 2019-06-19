@@ -109,7 +109,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .main {
   display: flex;
   justify-content: center;
@@ -149,13 +149,13 @@ export default {
   border: 1px solid gray;
 }
 
-::v-deep .md-list-item-content {
+.md-list-item-content {
   min-height: 48px !important;
 }
 
-::v-deep .md-list-item:hover{
-  background: #484848;
-  border-radius: 5px;
+ .md-list-item:hover{
+  background: #484848 !important;
+  border-radius: 5px !important;
 }
 
 </style>
