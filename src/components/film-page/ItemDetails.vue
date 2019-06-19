@@ -93,8 +93,7 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" >
+<style lang="scss" scoped >
 .md-list {
   width: 320px;
   max-width: 100%;
@@ -140,8 +139,8 @@ export default {
 }
 
 ::v-deep .md-list-item:hover{
-  background: #484848;
-  border-radius: 5px;
+  background: #484848 !important;
+  border-radius: 5px !important;
 
 }
 </style>

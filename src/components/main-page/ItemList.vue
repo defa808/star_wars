@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped>
 .grid-item {
   margin-bottom: 10px;
 }

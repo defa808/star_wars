@@ -15,13 +15,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .error {
-    height:100% !important;
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+  height: 100% !important;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   font-family: Star Jedi;
   color: #ff7f50;
 }

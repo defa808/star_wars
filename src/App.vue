@@ -1,5 +1,5 @@
 <template>
-  <div id="app" >
+  <div id="app">
     <!-- <div id="nav">
     Home</router-link>|
     </div>-->
@@ -24,12 +24,11 @@ export default {
     CubeShadow
   },
   computed: {
-    ...mapGetters(["loading"]),
-   
+    ...mapGetters(["loading"])
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" >
 @font-face {
   font-family: "Star Jedi";
   src: url("//db.onlinewebfonts.com/t/af7c07faaff0d16720c25db7990579e2.eot");
@@ -46,10 +45,7 @@ export default {
 }
 body {
   background: black;
-}
-
-body {
-  background-image: url('assets/img/backStars.jpg');
+  background-image: url("assets/img/backStars.jpg");
 }
 
 .titleApp {
