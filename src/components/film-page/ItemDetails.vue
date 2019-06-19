@@ -33,10 +33,10 @@
           <div class="description">{{selectedFilm.edited}}</div>
         </div>
         <div class="wrapColumn">
-          <h2>Starsheeps</h2>
+          <h2>Starships</h2>
           <md-list class="md-triple-line">
             <template v-for="item in selectedStarships">
-              <router-link :to="{ path: '/starsheeps/'+ getIdCharacter(item.url)}" :key="item.name">
+              <router-link :to="{ path: '/starships/'+ getIdCharacter(item.url)}" :key="item.name">
                 <md-list-item>
                   <div>{{item.name}}</div>
                 </md-list-item>
@@ -141,6 +141,8 @@ export default {
 
 ::v-deep .md-list-item:hover{
   background: #484848;
+  border-radius: 5px;
+
 }
 </style>
 
