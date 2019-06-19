@@ -1,5 +1,5 @@
 # star-wars
-
+Demo here: https://starwars-301f3.firebaseapp.com/
 ## Project setup
 ```
 npm install
